@@ -12,7 +12,7 @@ namespace TCP_Server
         private TcpListener tcpServer = null;
         private CancellationTokenSource cts = null;
         private bool serverActive = false;
-        private Byte[] buffer = new byte[1024];
+        //private Byte[] buffer = new byte[1024];
         private Dictionary<TcpClient,bool> clients = new Dictionary<TcpClient,bool>();
         private List<Task> clientTasks = new List<Task>();
 
